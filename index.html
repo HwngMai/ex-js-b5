@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- BÀI 1 -->
+    <h3 class="m-3">BÀI 1: QUẢN LÝ TUYỂN SINH</h3>
+    <div class="form-group m-5">
+      <p class="alert alert-danger m-1">
+        Nhập vào điểm chuẩn của hội đồng, điểm số 3 môn thi, khu vực ưu tiên,
+        đối tượng dự thi. Cho biết thí sinh đó đậu hay rớt và tổng điểm đạt
+        được.
+      </p>
+      <p class="m-5 h3">Nhập vào điểm chuẩn của hội đồng:</p>
+      <input id="diemChuan" class="m-1 form-control col-sm" />
+      <p class="m-5 h3">Nhập vào điểm 3 môn thi:</p>
+      <div class="form-group row m-5">
+        <input id="diem1" class="m-1 form-control col-sm" />
+        <input id="diem2" class="m-1 form-control col-sm" />
+        <input id="diem3" class="m-1 form-control col-sm" />
+      </div>
+      <p class="m-5 h3">Chọn khu vực ưu tiên:</p>
+      <select id="khuVuc" class="custom-select">
+        <option value="A">Kv. A</option>
+        <option value="B">Kv. B</option>
+        <option value="C">Kv. C</option>
+        <option value="X">X. Không Ưu tiên cái quần què gì hết! Em đi thi với 100% thực lực</option>
+      </select>
+      <p class="m-5 h3">Chọn Đối tượng dự thi:</p>
+      <select id="doiTuong" class="custom-select">
+        <option value="1">Đối tượng 1</option>
+        <option value="2">Đối tượng 2</option>
+        <option value="3">Đối tượng 3</option>
+        <option value="0">Đối tượng Cá biệt lun</option>
+      </select>
+      <div
+        class="form-group m-5 d-flex justify-content-center align-items-center flex-column"
+      >
+        <button id="btnBai1" class="btn btn-success">Hiện kết quả</button>
+        <p id="ketQuaBai1" class="m-5 alert alert-success">Kết quả nà:</p>
+      </div>
+    </div>
+        <!-- BÀI 1 -->
+        <h3 class="m-3">BÀI 2: TÍNH TIỀN ĐIỆN</h3>
+        <div class="form-group m-5">
+          <p class="alert alert-danger m-1">
+            Nhập vào số kW sử dụng. Tính tiền điện theo công thức với đơn giá như sau: <br>
+            50kW đầu: 500đ/kW <br>
+            50kW kế: 650đ/kW<br>
+            100kW kế: 850đ/kW<br>
+            150kW kế: 1100đ/kW<br>
+            Còn lại: 1300đ/kW<br>
+          </p>
+          <p class="m-5 h3">Nhập vào số kW sử dụng:</p>
+          <input id="soKW" class="m-1 form-control col-sm" />
+          <div
+          class="form-group m-5 d-flex justify-content-center align-items-center flex-column"
+        >
+          <button id="btnBai2" class="btn btn-success">Hiện kết quả</button>
+          <p id="ketQuaBai2" class="m-5 alert alert-success">Kết quả nà:</p>
+        </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
